@@ -1,0 +1,62 @@
+.title-drums{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    padding: 4%;
+    text-shadow: 4px 4px 10px blue;
+    color:white;
+    padding-bottom: 10px;
+}
+
+#top-text{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#container{
+}
+
+body{
+    /* background-image: url("https://i.imgur.com/v24HsIm.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background: url("https://i.imgur.com/v24HsIm.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.key{
+    background-color:rgba(255, 255, 255, 0.5);
+    margin: 2%;
+    text-align: center;
+    justify-content: space-between;
+    height:110px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 10px black;
+    transition: all 0.07s;
+    padding: 5%;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color:yellow;
+    box-shadow: 7px 7px 6px yellow;
+}
+
+#boxes{
+    justify-content: space-around;
+}
+
+.center-this{
+    margin:auto;
+    width: 95%
+}
+
+.col-md-2{
+    margin-bottom: 4%;
+}
+
+
