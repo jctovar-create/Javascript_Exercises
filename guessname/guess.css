@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    font-family: 'Literata', serif;
+    background-color: #ebf2ff;
+}
+
+#stylebtn{
+    background-color: aquamarine;
+    padding:10px;
+}
+
+#stylebtn:hover{
+    background-color: yellow; 
+}
+
