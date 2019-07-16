@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    vertical-align: 50%;
+    background-color: #bfd8ff;
+}
+
+#page{
+    font-family: 'DM Serif Text', serif;
+    background-color: #ffe785;
+    padding: 1%;
+    padding-bottom: 10px;
+}
