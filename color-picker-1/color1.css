@@ -1,0 +1,40 @@
+body{
+    background-color: cyan;
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+#container{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.square{
+    background-color: black;
+    width: 30%;
+    margin: 1.66%;
+    padding-bottom: 30%;
+    float: left;
+}
+
+#toptext{
+    font-family: 'Shojumaru', cursive;
+}
+
+#btntry{
+    text-align: center;
+    clear: both;
+}
+
+#reloadbtn{
+    margin-top: 10px;
+    width:150px;
+    height:40px;
+    padding:10px;
+    background-color:white;
+    font-family: 'Shojumaru', cursive;
+}
+
+#reloadbtn:hover{
+    background-color: yellow;
+}
