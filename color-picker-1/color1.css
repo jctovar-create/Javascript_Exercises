@@ -17,6 +17,7 @@ body{
     float: left;
 }
 
+
 #toptext{
     font-family: 'Shojumaru', cursive;
 }
@@ -38,3 +39,12 @@ body{
 #reloadbtn:hover{
     background-color: yellow;
 }
+
+#banner{
+    display:inline;
+}
+
+.selected{
+    background-color: yellow;
+}
+
