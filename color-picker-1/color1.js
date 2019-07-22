@@ -1,22 +1,52 @@
-colors = colorArray(6);
-
+var numSquares = 6;
+var colors = colorArray(numSquares);
 var squares = document.getElementsByClassName("square");
-
 var rgbValue = document.querySelector("#rgbValue");
-
 var color = correctColor();
-
 var reset = document.getElementById("reset");
-
 var update = document.querySelector("#message");
-
 var topPart = document.querySelector("#toppart");
+var easyButton = document.querySelector("#easyBtn");
+var hardButton = document.querySelector("#hardBtn");
 
 rgbValue.textContent = color;
 
-reset.addEventListener('click', function(){
-    colors = colorArray(6);
+easyButton.addEventListener("click", function(){
+    topPart.style.backgroundColor = "cyan";
+    easyButton.classList.add("selected");
+    hardButton.classList.remove("selected");
+    numSquares = 3;
+    colors = colorArray(numSquares);
     color = correctColor();
+    rgbValue.textContent = color;
+    for(var i = 0; i < squares.length; i++){
+        if(colors[i]){
+            squares[i].style.backgroundColor = colors[i];
+        } else {
+            squares[i].style.display = "none";
+        }
+    }
+});
+
+hardButton.addEventListener("click", function(){
+    topPart.style.backgroundColor = "cyan";
+    hardButton.classList.add("selected");
+    easyButton.classList.remove("selected");
+    numSquares = 6;
+    colors = colorArray(numSquares);
+    color = correctColor();
+    rgbValue.textContent = color;
+    for(var i = 0; i < squares.length; i++){
+        squares[i].style.backgroundColor = colors[i];
+        squares[i].style.display = "block";
+    }
+});
+
+reset.addEventListener('click', function(){
+    colors = colorArray(numSquares);
+    color = correctColor();
+    update.textContent = "";
+    this.textContent = "New Colors";
     rgbValue.textContent = color;
     topPart.style.backgroundColor = "cyan";
     for(var i = 0; i < squares.length; i++){
@@ -36,7 +66,7 @@ for(var i = 0; i < squares.length; i++){
             // alert("You Win!");
         } else {
             update.textContent = "Try Again";
-            this.style.backgroundColor = "cyan";
+            this.style.backgroundColor = "black";
             // alert("You Suck!");
         }
     });
@@ -64,7 +94,7 @@ function colorArray(num){
 //get one random value from the arr
 
 function correctColor(){
-    var correctIndex = Math.floor(Math.random() * colors.length + 1);
+    var correctIndex = Math.floor(Math.random() * colors.length);
     return colors[correctIndex];
 };
 
