@@ -12,6 +12,7 @@ var hardButton = document.querySelector("#hardBtn");
 rgbValue.textContent = color;
 
 easyButton.addEventListener("click", function(){
+    topPart.style.backgroundColor = "cyan";
     easyButton.classList.add("selected");
     hardButton.classList.remove("selected");
     numSquares = 3;
@@ -28,6 +29,7 @@ easyButton.addEventListener("click", function(){
 });
 
 hardButton.addEventListener("click", function(){
+    topPart.style.backgroundColor = "cyan";
     hardButton.classList.add("selected");
     easyButton.classList.remove("selected");
     numSquares = 6;
@@ -43,6 +45,8 @@ hardButton.addEventListener("click", function(){
 reset.addEventListener('click', function(){
     colors = colorArray(numSquares);
     color = correctColor();
+    update.textContent = "";
+    this.textContent = "New Colors";
     rgbValue.textContent = color;
     topPart.style.backgroundColor = "cyan";
     for(var i = 0; i < squares.length; i++){
@@ -62,7 +66,7 @@ for(var i = 0; i < squares.length; i++){
             // alert("You Win!");
         } else {
             update.textContent = "Try Again";
-            this.style.backgroundColor = "cyan";
+            this.style.backgroundColor = "black";
             // alert("You Suck!");
         }
     });
