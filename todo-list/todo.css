@@ -1,0 +1,120 @@
+html, body{
+    height:100%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    height:90%;
+    width:50%;
+    min-width:400px;
+    margin: 0 auto;
+    background-color: rgb(219, 240, 255);
+}
+
+.header{
+    height:23%;
+    width:100%;
+    background-image: url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+#date{
+    margin:10px;
+    position: absolute;
+    bottom:0;
+    text-align: left;
+    color:white;
+
+}
+
+.content{
+    height:77%;
+    width:100%;
+    position: relative;
+}
+
+.add-item{
+    width: 100%;
+    height:15%;
+    background-color: rgb(228, 235, 247);
+    position: absolute;
+    bottom: 0;
+}
+
+#addBtn{
+    color: white;
+    background-color: blue;
+    height:70%;
+    width:10%;
+    font-size: 200%;
+    text-align: center;
+    margin: 2%;
+    border-radius: 50%;
+    position: absolute;
+    outline: none;
+}
+
+#addBtn:hover{
+    opacity:0.5;
+}
+
+.list{
+    background-color: red;
+    height:10%;
+    width:100%;
+}
+
+#input{
+    text-align: center;
+    font-size: 200%;
+    float:right;
+    margin:2%;
+    height:60%;
+    width: 80%;
+    border:1px solid black;
+}
+
+#refresh{
+    color:white;
+    position: absolute;
+    right: 0;
+    margin-top:5px;
+    margin-right:5px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.item{
+    display: inline;
+}
+
+.task{
+    display:inline;
+    margin-left:15px;
+}
+
+.emptycircle{
+    float:left;
+}
+
+.trashcan{
+    float:right;
+    margin-right:15px;
+}
+
+#refresh:hover{
+    color:black;
+}
+
+.trashcan:hover{
+    color:red;
+}
