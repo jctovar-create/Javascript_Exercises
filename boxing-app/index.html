@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Boxing Application</title>
+  <link rel="stylesheet" href="boxing.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<div class="everything">
+    <div class="topSection">
+        <h1>Boxing Scores</h1>
+        <h3><span id="boxer1Name">Boxer 1</span> vs <span id="boxer2Name">Boxer 2</span></h3>
+        <h5 id="roundStatus">Currently in Round <span id="roundNumber">1</span></h5>
+    </div>
+
+    <div class="sideBySide">
+        <div class="boxer1">
+            <div class="boxer1Pic"></div>
+            <div class="userOptions">
+                <h5 class="scoreOptionHeader">Manny Wins Round by Score of</h5>
+                <div class="roundBtn">
+                    <button id="ten91" type="button" class="btn btn-primary btn-lg btn-block voteBtn">10-9</button>
+                    <button id="ten81" type="button" class="btn btn-primary btn-lg btn-block voteBtn">10-8</button>
+                    <button id="ten71" type="button" class="btn btn-primary btn-lg btn-block voteBtn">10-7</button>
+                </div>
+            </div>
+            <h5 class="totalPointsHeader">Total Points</h5>
+            <div class="totalPoints">
+                <h4 id="boxer1UserPoints" class="userPoints">0</h4>
+            </div>
+        </div>
+        <div class="boxer2">
+            <div class="boxer2Pic"></div>
+            <div class="userOptions">
+                <h5 class="scoreOptionHeader">Thurman Wins Round by Score of</h5>
+                <div class="roundBtn">
+                    <button id="ten92" type="button" class="btn btn-primary btn-lg btn-block voteBtn">10-9</button>
+                    <button id="ten82" type="button" class="btn btn-primary btn-lg btn-block voteBtn">10-8</button>
+                    <button id="ten72" type="button" class="btn btn-primary btn-lg btn-block voteBtn">10-7</button>
+                </div>
+            </div>
+            <h5 class="totalPointsHeader">Total Points</h5>
+            <div class="totalPoints">
+                    <h4 id="boxer2UserPoints" class="userPoints">0</h4>
+            </div>
+        </div>
+    </div>
+    <div class="refreshBtn">
+        <button type="button" onClick="window.location.reload();" class="btn btn-primary btn-lg">ReloadPage</button>
+    </div>
+</div>
+
+  
+
+
+<script type="text/javascript" src="boxing.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+body{
+    background: url('images/boxingRing.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width: 525px;
+}
+
+.topSection{
+    text-align: center;
+    font-family: 'Permanent Marker', serif;
+    color: white;
+    text-shadow: 4px 1px 15px black;
+}
+
+.boxer1Pic{
+    background-image: url('https://d5xydlzdo08s0.cloudfront.net/media/celebrities/1302/manny_profile_ifonly_300x300__L.jpg');
+    height:200px;
+    width:200px;
+    background-size: cover;
+    margin:auto;
+    box-shadow: 5px 1px 15px white;
+}
+
+.boxer2Pic{
+    background-image: url('https://www.fite.tv/thumbs/s3/ims-thumbs/fighters_images/keith_thurman/Keith_Thurman.jpg');
+    height:200px;
+    width:200px;
+    background-size: cover;
+    margin:auto;
+    box-shadow: 5px 1px 5px white;
+
+}
+
+.roundBtn{
+    display:block;
+    outline: none;
+    margin:auto;
+    width:90%;
+}
+
+.boxer1{
+    height:100%;
+    width:45%;
+    max-width: 289px;
+    background-color:#292929;
+    display: inline-block;
+    margin-right:1%;
+    border-radius: 20px;
+
+}
+
+.boxer2{
+    height:100%;
+    width:45%;
+    max-width: 289px;
+    background-color:#292929;
+    display: inline-block;
+    margin-left:1%;
+    margin-right:1%;
+    border-radius: 20px;    
+}
+
+.sideBySide{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color:white;
+}
+
+.totalPoints{
+    width:30%;
+    margin:auto;
+    background-color: white;
+    height:30px;
+    margin-bottom: 15px;
+}
+
+.scoreOptionHeader{
+    margin-top:10px;
+    padding: 9px;
+}
+
+.totalPointsHeader{
+    margin-top:10px;
+}
+
+.userPoints{
+    color:black;
+}
+
+.refreshBtn{
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
