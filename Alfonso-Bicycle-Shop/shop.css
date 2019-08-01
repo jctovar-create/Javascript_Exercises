@@ -1,0 +1,46 @@
+html, body{
+    min-width: 620px;
+}
+
+.cardText{
+    text-align: center;
+}
+
+.cardTry{
+    float: left;
+    margin-right:1%;
+    margin-bottom: 1%;
+    width:20%;
+    display:inline;
+    height:460px;
+}
+
+.cardTry:hover{
+    background-color:#d6d6d6;
+}
+
+#cartIcon{
+    height:20px;;
+}
+
+.numberOfItems{
+    text-align: center;
+}
+
+#topLogo{
+    font-family: 'Bilbo', cursive;
+}
+
+#topLogo:hover{
+    color:blue;
+}
+
+.itemType{
+    margin:10px auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+#stateSelect{
+    text-align: center;
+    display: block;
+}

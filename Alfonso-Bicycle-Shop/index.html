@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Alfonso's Bicycle Shop</title>
+  <link rel="stylesheet" href="shop.css" type="text/css">
+  <script src="https://kit.fontawesome.com/abef8b8984.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Mrs+Sheppards&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bilbo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+        <nav class="navbar navbar-light bg-light">
+                <a id="topLogo" class="navbar-brand" href="index.html">Alfonso's Bicycle Shop</a>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-shopping-cart"></i>  Cart   <span id="cartQuantity" class="badge badge-pill badge-success">0</span></button>        
+        </nav>  
+        
+    <div class="container-fluid">
+    <h3 class="itemType">Bicycles</h3>
+        <div class="card cardTry col-lg-4 col-md-6 col-sm-12" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.shoplightspeed.com/shops/617773/files/12237212/300x250x2/kona-bicycles-roadhouse-54cm-by-kona.jpg" alt="Card image cap">
+                <div class="card-body cardText">
+                    <h5 class="card-title">Street Beginner</h5>
+                    <h6>$320</h6>
+                    <p class="card-text">If you're getting into riding and want to travel to and from work this is the perfect bike for you.</p>
+                    <div class="row align-items-end justify-content-around">
+                        <input id="beginnerQuantity" class="numberOfItems"  type="number" name="quantity" min="1" max="50">
+                        <a href="#" id="streetBeginnerBuy"  class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+        </div>
+        <div class="card cardTry col-lg-4 col-md-6 col-sm-12" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.shoplightspeed.com/shops/616535/files/11887421/300x250x2/yamaha-yamaha-cross-connect.jpg" alt="Card image cap">
+                <div class="card-body cardText">
+                    <h5 class="card-title">Mongoose Mountain</h5>
+                    <h6>$199</h6>
+                    <p class="card-text">Perfect for being out there on the trail and navigating through rocks and rough terrain.</p>
+                    <div class="row align-items-end justify-content-around">
+                        <input id="mongooseQuantity" class="numberOfItems"  type="number" name="quantity" min="1" max="50">
+                        <a href="#" id="mountainBuy" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+        </div>
+        <div class="card cardTry col-lg-4 col-md-6 col-sm-12" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.shoplightspeed.com/shops/610035/files/7790292/300x250x2/kona-kona-rove-2018-black-bicycle.jpg" alt="Card image cap">
+                <div class="card-body cardText">
+                    <h5 class="card-title">Street Athletic</h5>
+                    <h6>$450</h6>
+                    <p class="card-text">This bike is for serious riders who are looking for a bike will give them the advantage during races.</p>
+                    <div class="row align-items-end justify-content-around">
+                        <input id="athleticQuantity" class="numberOfItems"  type="number" name="quantity" min="1" max="50">
+                        <a href="#" id="streetAthleticBuy" class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+        </div>
+        <div class="card cardTry col-lg-4 col-md-6 col-sm-12" style="width: 18rem;">
+                <img class="card-img-top" src="https://cdn.shoplightspeed.com/shops/626495/files/14090074/300x250x2/del-sol-del-sol-lxi-flow-2.jpg" alt="Card image cap">
+                <div class="card-body cardText">
+                    <h5 class="card-title">Casual Riding</h5>
+                    <h6>$150</h6>
+                    <p class="card-text">Enjoy cruising around the neighborhood and taking in the views? This bike is perfect for you.</p>
+                    <div class="row align-items-end justify-content-around">
+                        <input id="cruisingQuantity" class="numberOfItems" type="number" name="quantity" min="1" max="50">
+                        <a href="#" id="casualBuy"  class="btn btn-primary">Add To Cart</a>
+                    </div>
+                </div>
+        </div>
+
+        
+        <!-- <br>
+        <div id="stateSelect">
+            <h3>State (required):</h3>
+            <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                    </button>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+            </div>
+        </div> -->
+
+
+    
+    </div>
+
+
+
+<script src="shop.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
