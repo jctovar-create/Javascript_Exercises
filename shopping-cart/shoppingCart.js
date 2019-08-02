@@ -3,14 +3,21 @@ var view = document.getElementById('viewCart');
 var buyApple = document.getElementById('buyApple');
 var itemsInCart = document.getElementById('numberItems');
 var total = document.getElementById('totalCart');
+var itemsDisplay = document.getElementById('itemsDisplay');
+var totalPriceDisplay = document.getElementById('priceDisplay');
+var cartDisplay = document.getElementById("cartDisplay");
+
+
 
 total.addEventListener('click', function(){
     console.log(totalCart());
+    totalPriceDisplay.innerHTML = totalCart();
 
 });
 
 view.addEventListener('click', function(){
-    console.log(listCart());
+    console.log(listCart  ());
+    cartDisplay.innerHTML = JSON.stringify(listCart());
 });
 
 
@@ -27,6 +34,8 @@ clearTheCart.addEventListener('click', function(){
 itemsInCart.addEventListener('click', function(){
     // countCart();
     console.log(countCart());
+    itemsDisplay.innerHTML = countCart();
+
 });
 
 
@@ -52,16 +61,17 @@ function addItemToCart(name, price, count){
     }
     var item = new Item(name, price, count);
     cart.push(item);
+    saveCart();
 }
 
-addItemToCart('apple', 1.22, 2);
-addItemToCart('pear', 1.99, 2);
-addItemToCart('apple', 1.22, 4);
+// addItemToCart('apple', 1.22, 2);
+// addItemToCart('pear', 1.99, 2);
+// addItemToCart('apple', 1.22, 4);
 
 console.log(cart);
 console.log(cart.length);
 console.log(cart[0]);
-console.log(cart[0].name);
+// console.log(cart[0].name);
 
 
 
@@ -78,13 +88,14 @@ function removeItem(name){
             break;
         }
     }
+    saveCart();
 }
 
 removeItem('apple');
-console.log(cart[0].count);
+// console.log(cart[0].count);
 
 removeItem('apple');
-console.log(cart[0].count);
+// console.log(cart[0].count);
 
 //remove item from cart all. removes all items by name 
 
@@ -95,14 +106,15 @@ function removeItemsByName(name){
             break;
         }
     }
+    saveCart();
 }
 
-addItemToCart("toy", 5.55, 2);
-addItemToCart("tresaure", 5.35, 1);
-addItemToCart("Max", 2.55, 5);
-addItemToCart("toy", 5.55, 2);
-addItemToCart("toy", 5.55, 2);
-addItemToCart("toy", 5.55, 2);
+// addItemToCart("toy", 5.55, 2);
+// addItemToCart("tresaure", 5.35, 1);
+// addItemToCart("Max", 2.55, 5);
+// addItemToCart("toy", 5.55, 2);
+// addItemToCart("toy", 5.55, 2);
+// addItemToCart("toy", 5.55, 2);
 
 console.log(cart);
 
@@ -115,6 +127,7 @@ console.log(cart);
 
 function clearCart(){
     cart = [];
+    saveCart();
 }
 
 
@@ -122,11 +135,13 @@ function clearCart(){
 //count the cart so we don't add separate items - returns total count 
 
 function countCart(){
-    var totalCount = 0;
+    var totalCount  = 0;
+
     for(var i in cart){
         totalCount += cart[i].count;
     }
     return totalCount;
+
 }
 
 //get total price of cart - returns cost of cart 
@@ -142,7 +157,17 @@ function totalCart(){
 //list cart - returns an array of items - generate HTML to Display items 
 
 function listCart(){
-    return cart;
+    var cartCopy = [];
+    for(var i in cart){
+        var item = cart[i];
+        var itemCopy = {};
+        for(var p in item){
+            itemCopy[p] = item[p];
+        }
+        cartCopy.push(itemCopy);
+    }
+    printObject(cartCopy);
+    return cartCopy;
     /*
     for(var i in cart){
         console.log(cart[i]);
@@ -150,20 +175,32 @@ function listCart(){
     */
 }
 
+function printObject(o){
+    var out = '';
+    for(var p in o){
+        out += p + ": " + o[p] + '\n';
+    }
+    // alert(out);
+}
+
 //save the cart to a local storage 
 
 function saveCart(){
-
+    localStorage.setItem('shoppingCart', JSON.stringify(cart));
 }
+
+// localStorage.setItem('age', 26);
 
 //load the cart from local storage
 
 function loadCart(){
-
+    cart =  JSON.parse(localStorage.getItem('shoppingCart'));
 }
 
+loadCart();
 
-
+var array2 = listCart();
+console.log(array2);
 
 
 
