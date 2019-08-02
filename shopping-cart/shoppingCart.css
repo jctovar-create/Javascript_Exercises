@@ -1,3 +1,40 @@
 #buy:hover{
     background-color: yellow;
 }
+
+#totalItemsDisplay{
+    background-color: red;
+    display:inline-block;
+
+    width:90px;
+    height:100%;
+}
+
+#totalPriceDisplay{
+    background-color: blue;
+    display:inline-block;
+
+    width:90px;
+    height:100%;
+}
+
+.totalText{
+    padding:4px;
+    text-align: center;
+    vertical-align: center;
+    margin:auto;
+}
+
+#viewCartDisplay{
+    background-color: green;
+    display:inline-block;
+    width:90px;
+    height:100%;
+}
+
+#displayToUser{
+    background-color:grey;
+    text-align: center;
+    margin-top:10px;
+    height:100px;
+}
