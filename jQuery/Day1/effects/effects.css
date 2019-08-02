@@ -1,0 +1,21 @@
+div{
+    width:100px;
+    height:100px;
+    background-color:teal;
+    float:left;
+    margin: 20px;
+    display: none;
+}
+
+button{
+    position: fixed;
+}
+
+#change{
+    position: absolute;
+    width: 250px;
+    height:250px;
+    background-color:blue;
+
+    margin-top:50px;
+}
