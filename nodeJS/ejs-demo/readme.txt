@@ -1,0 +1,1 @@
+These are notes from the Udemy Course I am taking that goes over NodeJS. In order to get these files to work you still need to download the node_modules. 
