@@ -1,0 +1,16 @@
+#heading{
+    background-image: url("https://www.insp.com/content/uploads/2015/01/chuck-1200x628.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#topText{
+    width: 50%;
+    margin-left: 0;
+}
+
+#jokes {
+    margin-top:10px;
+}
